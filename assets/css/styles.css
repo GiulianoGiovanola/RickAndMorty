@@ -1,0 +1,83 @@
+body{
+    background-color: #111111
+}
+
+.hero{
+    height: 53.3vh;
+}
+
+.fondo{
+    background-image: url("../images/Fondotitulo.jpg");
+}
+
+.card{
+    background-color: #89f23d;
+}
+
+.title{
+    color: black;
+}
+
+.subtitle{
+    color: #111111;
+}
+
+.button.is-info{
+    background-color: transparent;
+    border-color: #01B1C8;
+    color: #01b1c9;
+}
+
+.input{
+    background-color: transparent;
+    border-color: #01B1C8;
+    color: white;
+}
+
+.input::placeholder{
+    color: #01B1C8;
+}
+
+@media(max-width: 500px){
+    .hero{
+        height: 21.3vh;
+        background-size: contain;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .mb-6{
+        margin-bottom: 1.5rem !important;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .input, .button.is-info{
+        font-size: 0.85rem;
+    }
+
+    .card{
+        width: 83%;
+        margin: 0 auto;
+    }
+    
+    /*.card-image figure img{
+        margin: 0 auto;
+        height: 200px !important;
+    width: 200px !important;
+    
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    }*/
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .subtitle{
+        font-size: 0.75rem;
+    }
+}

@@ -2,31 +2,23 @@ const Card = personaje => {
     const {name, status, species, image} = personaje
     return `
     <div class="column is-one-quarter-desktop is-full-mobile">
-            <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="${image}" alt="Placeholder image">
-                  </figure>
+        <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="${image}" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5">${name}</p>
+                  <p class="subtitle is-6">Specie: ${species} <br>
+                  Status: ${status}</p>
                 </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img src="${image}" alt="Placeholder image">
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <p class="title is-4">${name}</p>
-                      <p class="subtitle is-6">${species}/${status}</p>
-                    </div>
-                  </div>
-              
-                  <div class="content">
-                      <p>${status}</p>
-                  </div>
-                </div>
+              </div>
             </div>
         </div>
+    </div>
     `
 }
 
