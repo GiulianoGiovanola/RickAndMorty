@@ -73,9 +73,9 @@ body{
     }
     
     .card-image figure img{
-        height: 200px !important;
-        width: 200px !important;
-        border-radius: 50%;
+        margin: 0 auto;
+        height: 260px !important;
+        width: 325px !important;
     }
 
     .title{
