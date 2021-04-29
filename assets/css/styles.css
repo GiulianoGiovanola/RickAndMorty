@@ -14,6 +14,16 @@ body{
     background-color: #89f23d;
 }
 
+.card-content{
+    padding-top: 2.5rem !important;
+}
+
+.card-image figure img{
+    height: 225px !important;
+    width: 300px !important;
+    border-radius: 100%;
+}
+
 .title{
     color: black;
 }
@@ -62,16 +72,11 @@ body{
         margin: 0 auto;
     }
     
-    /*.card-image figure img{
-        margin: 0 auto;
+    .card-image figure img{
         height: 200px !important;
-    width: 200px !important;
-    
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
-    background-size: 100% auto;
-    }*/
+        width: 200px !important;
+        border-radius: 50%;
+    }
 
     .title{
         font-size: 1rem;
