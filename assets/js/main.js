@@ -76,6 +76,7 @@ const Modal = personaje => {
   </div>
   `
 }
+
 const appendElements = (characters, borrarGrilla = false) => {
   const $grid = document.querySelector('.grid');
   if (borrarGrilla) {
@@ -85,6 +86,7 @@ const appendElements = (characters, borrarGrilla = false) => {
       const cardItem = Card(character);
       $grid.innerHTML += cardItem;
   });
+
   const $modalOpenArr = document.querySelectorAll('.handleOpenModal');
   const $modal = document.querySelector('.modal');
   const $modalContent = document.querySelector('.modal-content');
@@ -92,6 +94,7 @@ const appendElements = (characters, borrarGrilla = false) => {
   $modalClose.addEventListener('click', () => {
       $modal.classList.remove('is-active');
   })
+  
   $modalOpenArr.forEach(($card) => {
       $card.addEventListener('click', () => {
           const id = $card.dataset.id;
@@ -108,6 +111,7 @@ const appendElements = (characters, borrarGrilla = false) => {
       })
   })
 }
+
 const getCharacters = async (baseURL, from, to) => {
   const charactersRange = Array.from({ length: to - from + 1 }, (_, index) => index + 1).join(',');
   const url = `${baseURL}character/${charactersRange}`;
@@ -115,18 +119,21 @@ const getCharacters = async (baseURL, from, to) => {
   const characters = await response.json();
   return characters;
 }
+
 const getEpisode = async (baseURL) => {
   const url = `${baseURL}`;
   const response = await fetch(url);
   const episode = await response.json();
   return episode;
 }
+
 const getCharactersByQuery = async (baseURL, valorABuscar) => {
   const url = `${baseURL}character/?name=${valorABuscar}`;
   const response = await fetch(url);
   const characters = await response.json();
   return characters;
 }
+
 const main = async () => {
   const baseURL = 'https://rickandmortyapi.com/api/';
   const characters = await getCharacters(baseURL, 1, 100);
@@ -141,4 +148,5 @@ const main = async () => {
       appendElements(characters, true);
   })
 }
+
 main();
