@@ -48,7 +48,7 @@ const Modal = personaje => {
               <div class="media-content">
               <div class="content">
                   <p class="textoModal">
-                  <strong>${name}</strong>
+                  <strong>${id}. ${name}</strong>
                   <br>
                   Species: <strong>${species}</strong>
                   <br>
