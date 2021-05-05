@@ -32,6 +32,10 @@ body{
     color: #111111;
 }
 
+.info{
+    color: red;
+}
+
 .button.is-info{
     background-color: transparent;
     border-color: #01B1C8;
@@ -46,6 +50,35 @@ body{
 
 .input::placeholder{
     color: #01B1C8;
+}
+
+.box{
+    border-radius: 0;
+    background-color: #00414d;
+    border: 2px solid #68c839;
+    border-radius: 30px;
+}
+
+.imageModal{
+    border-radius: 33px;
+}
+
+.modal-content::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.modal-content::-webkit-scrollbar:vertical {
+    width: 10px;
+} 
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #01B1C8;
+    border-radius: 20px;
+}
+
+
+.content ul li, .content p,.content p strong, .content h3{
+    color: white;
 }
 
 @media(max-width: 500px){
@@ -84,5 +117,16 @@ body{
 
     .subtitle{
         font-size: 0.75rem;
+    }
+
+    .modal-content{
+        margin: 0 20px;
+        max-height: calc(120vh - 160px);
+        width: 90%;
+    }
+
+    .modal-close{
+        right: 60px;
+        top: 41px;
     }
 }
