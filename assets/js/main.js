@@ -95,9 +95,9 @@ const appendElements = (characters, borrarGrilla = false) => {
       $modal.classList.remove('is-active');
   })
   
-  $modalOpenArr.forEach(($card) => {
-      $card.addEventListener('click', () => {
-          const id = $card.dataset.id;
+  $modalOpenArr.forEach((card) => {
+      card.addEventListener('click', () => {
+          const id = card.dataset.id;
           const character = characters[id - 1]; //Nos da la posicion del personaje en el array de characters
           const { episode } = character
           const getEpisodesData = async () => {
